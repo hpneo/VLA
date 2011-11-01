@@ -5,6 +5,7 @@
 $(document).ready ->
   $('.slider').nivoSlider(
     effect:'fold'
+    animSpeed:500
     controlNav:false
     directionNav:false
     pauseOnHover:false

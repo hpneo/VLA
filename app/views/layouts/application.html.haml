@@ -1,8 +1,8 @@
 !!!
 %html
   %head
-    %title Ing. Victor Leon Alvarez
-    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=PT+Serif"
+    %title V&A Consultores
+    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=PT+Serif|Changa+One"
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -10,23 +10,35 @@
     #header
       %h1
         %a{:href => '/'}
-          Ing. Victor Leon Alvarez
+          V&A Consultores
     #nav
       %ul
         %li
           %a{:href => '#'}
-            Categoría 1
+            Quiénes somos
         %li
           %a{:href => '#'}
-            Categoría 2
+            Servicios
         %li
           %a{:href => '#'}
-            Categoría 3
+            Artículos
+        %li
+          %a{:href => '#'}
+            Contáctenos
     #body
-      .column#content
+      .row
         = yield
-      .column#sidebar
-        %p.center
-          %img.profile{:src => '/assets/vla.jpg'}
-        %p.profile
-          Experto en Planificación y Gestión Pública, se desempeña como consultor y gestor en Programas Sociales.
+        %p.profile.big
+          Ofrecemos servicios de consultoría en temas de
+          %strong
+            gestión pública,
+          %strong
+            elaboración de proyectos,
+          así como en
+          %strong
+            proyectos de rescate arqueológico (CIRA)
+          y
+          %strong
+            proyectos de evaluación arqueológica (PEA).
+          %a{:href => '#'}
+            Conozca nuestros servicios &raquo;
