@@ -1,0 +1,132 @@
+body{
+  font-family: 'Helvetica', Arial, sans-serif;
+  color:#111111;
+  background:#eee;
+  margin:0;
+}
+a{
+  color:#333;
+  text-decoration:none;
+}
+a:hover{
+  color:#bc2e2e;
+}
+h1{
+  font-weight:normal;
+  font-family: 'Georgia';
+  text-shadow:1px 1px 1px #bbb;
+}
+h2{
+  font-family:'PT Serif', 'Georgia';
+  font-weight:400;
+  text-shadow:1px 1px 1px #ddd;
+  margin:10px 0;
+}
+#header, #body, #nav{
+  width:960px;
+  margin:0 auto;
+  overflow:hidden;
+}
+/*
+  = HEADER =
+*/
+#header{
+  height:80px;
+  line-height:80px;
+}
+#header h1{
+  text-align:center;
+  margin:0;
+}
+/*
+  = NAV =
+*/
+#nav{
+  background-image: linear-gradient(bottom, rgb(139,34,34) 50%, rgb(163,40,40) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(139,34,34) 50%, rgb(163,40,40) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(139,34,34) 50%, rgb(163,40,40) 100%);
+  background-image: -webkit-linear-gradient(bottom, rgb(139,34,34) 50%, rgb(163,40,40) 100%);
+  background-image: -ms-linear-gradient(bottom, rgb(139,34,34) 50%, rgb(163,40,40) 100%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.5, rgb(139,34,34)),
+    color-stop(1, rgb(163,40,40))
+  );
+  border-radius:2px;
+}
+#nav a{
+  color:#ffffff;
+}
+#nav ul{
+  list-style:none;
+  margin:0;
+  padding:4px 10px;
+  font-size:15px;
+  overflow:hidden;
+}
+#nav ul li{
+  display:inline-block; 
+  margin:0 2px;
+  padding:0;
+}
+#nav ul li a{
+  display:block;
+  padding:4px 8px;
+  border-radius:3px;
+  text-shadow:1px 1px 1px #491212;
+  font-weight:bold;
+}
+#nav ul li a:hover{
+  background:#6a1a1a;
+}
+/*
+  = BODY =
+*/
+#body{
+  margin-top:10px;
+  background:#f9f9f9;
+  box-shadow:0px 0px 10px #ccc;
+}
+.column{
+  float:left;
+  padding:5px 10px;
+}
+.column#content{
+  width:72%;
+}
+.column#content h2 a{
+  color:#8b2222;
+}
+.column#sidebar{
+  width:23%;
+  float:right;
+}
+.column#sidebar p{
+  margin:0;
+}
+p.center{
+  text-align:center;
+}
+.column#sidebar p.profile{
+  text-align:justify;
+  margin:10px 5px;
+  font-family:'Georgia';
+  color:#222;
+}
+.column#sidebar img.profile{
+  width:65%;
+  border-radius:3px;
+}
+.slider{
+  width:576px;
+  height:350px;
+  margin:0 auto;
+  border:solid 2px #ccc;
+  border-radius:2px;
+}
+.slider img{
+  width:80%;
+}

@@ -1,0 +1,33 @@
+!!!
+%html
+  %head
+    %title Ing. Victor Leon Alvarez
+    = stylesheet_link_tag    "styles"
+    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=PT+Serif"
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    #header
+      %h1
+        %a{:href => '/'}
+          Ing. Victor Leon Alvarez
+    #nav
+      %ul
+        %li
+          %a{:href => '#'}
+            Categoría 1
+        %li
+          %a{:href => '#'}
+            Categoría 2
+        %li
+          %a{:href => '#'}
+            Categoría 3
+    #body
+      .column#content
+        = yield
+      .column#sidebar
+        %p.center
+          %img.profile{:src => '/assets/vla.jpg'}
+        %p.profile
+          Experto en Planificación y Gestión Pública, se desempeña como consultor y gestor en Programas Sociales.
