@@ -12,10 +12,15 @@ a:hover{
   color:#bc2e2e;
 }
 h1{
-  font-weight:400;
+  font-weight:normal;
   font-family: 'Changa One', 'Georgia';
   font-size:42px;
   text-shadow:1px 1px 1px #bbb;
+}
+h1 small{
+  font-weight:bold;
+  font-family:'Paytone One';
+  color:#ac2a2a;
 }
 h2{
   font-family:'PT Serif', 'Georgia';
@@ -132,13 +137,13 @@ p.profile.big{
 
 p.profile a{
   font-size:15px;
-  background:#336699;
+  background:#832020;
   padding:3px 6px;
   color:#f9f9f9;
   border-radius:3px;
 }
 p.profile a:hover{
-  background:#4477aa;
+  background:#9b2626;
 }
 
 .nivo-caption{
