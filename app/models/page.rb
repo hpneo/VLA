@@ -8,12 +8,4 @@ class Page < ActiveRecord::Base
     end
   end
 
-  def to_param
-    if title
-      "#{title.parameterize}"
-    else
-      super
-    end
-  end
-
 end

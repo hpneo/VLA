@@ -85,6 +85,7 @@ h2{
   text-shadow:1px 1px 1px #491212;
   font-weight:bold;
 }
+#nav ul li a.active,
 #nav ul li a:hover{
   background:#6a1a1a;
 }
@@ -107,15 +108,27 @@ h2{
   float:left;
   padding:5px 10px;
 }
+.column.unpadded{
+  padding:0;
+}
+.column .block{
+  overflow:hidden;
+}
 .column#content{
-  width:72%;
+  width:70%;
 }
 .column#content h2 a{
   color:#8b2222;
 }
 .column#sidebar{
-  width:23%;
+  width:28%;
   float:right;
+}
+.column#sidebar h4{
+  font-weight:normal;
+  font-family: 'Changa One', 'Georgia';
+  font-size:24px;
+  margin:0;
 }
 .column#sidebar p{
   margin:0;
@@ -136,6 +149,30 @@ p.profile.big{
   border-radius:3px;
 }
 
+.column#news{
+  overflow:hidden;
+}
+
+.column#news .block p,
+.column#news .block img{
+  display: block;
+  margin:5px;
+}
+
+.column#news .block p{
+  float:right;
+  width:320px;
+}
+.column#news .block img{
+  float:left;
+}
+.column#news .block.alternate p{
+  float:left;
+}
+.column#news .block.alternate img{
+  float:right;
+}
+
 p.profile a{
   display:inline-block;
   font-size:15px;
@@ -148,6 +185,10 @@ p.profile a:hover{
   background:#9b2626;
 }
 
+.slider{
+  overflow: hidden;
+}
+
 .nivo-caption{
   font-family:'PT Serif';
   font-size:20px;
@@ -158,13 +199,24 @@ p.profile a:hover{
   padding:10px;
 }
 
-.row.span5 .cell{
+.row .cell{
   display:block;
   float:left;
-  width:175px;
   margin:0 5px;
+}
+
+.row.span3 .cell{
+  width:300px;
+  min-height:170px;
+}
+.row.span5 .cell{
+  width:175px;
   min-height:176px;
 }
-.row.span5 .cell.ad{
+.row .cell.ad{
   border: dashed 1px #ccc;
+}
+
+.half{
+  width:50%;
 }

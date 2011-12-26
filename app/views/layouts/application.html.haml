@@ -12,9 +12,12 @@
         %a{:href => root_path} Sólido Norte
     #nav
       %ul
+        %li
+          %a{:href => root_path, :class => is_active_page('root')}
+            Inicio
         - pages.each do |page|
           %li
-            %a{:href => page_path(page)}= page.title
+            %a{:href => page_path(page), :class => is_active_page(page)}= page.title
         %li
           %a{:href => '#'}
             Artículos
