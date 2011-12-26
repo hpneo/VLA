@@ -14,7 +14,7 @@ a:hover{
 h1{
   font-weight:normal;
   font-family: 'Changa One', 'Georgia';
-  font-size:42px;
+  font-size:52px;
   text-shadow:1px 1px 1px #bbb;
 }
 h1 small{
@@ -92,14 +92,15 @@ h2{
   = BODY =
 */
 #body{
-  margin-top:10px;
-  background:#f9f9f9;
-  box-shadow:0px 0px 10px #999;
-  border-radius:3px;
-  padding-bottom:10px;
+  overflow: visible;
 }
 .row{
-  width:100%;
+  width:auto;
+  background:#f9f9f9;
+  box-shadow:0px 0px 10px #999;
+  border-radius:2px;
+  margin:20px 0;
+  padding-bottom:10px;
   overflow:hidden;
 }
 .column{
@@ -136,6 +137,7 @@ p.profile.big{
 }
 
 p.profile a{
+  display:inline-block;
   font-size:15px;
   background:#832020;
   padding:3px 6px;
@@ -150,4 +152,19 @@ p.profile a:hover{
   font-family:'PT Serif';
   font-size:20px;
   padding:4px 2px;
+}
+
+.row.padded{
+  padding:10px;
+}
+
+.row.span5 .cell{
+  display:block;
+  float:left;
+  width:175px;
+  margin:0 5px;
+  min-height:176px;
+}
+.row.span5 .cell.ad{
+  border: dashed 1px #ccc;
 }

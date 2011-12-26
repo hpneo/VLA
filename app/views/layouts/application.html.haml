@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title V&A Consultores
+    %title Sólido Norte
     = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=PT+Serif|Changa+One|Paytone+One"
     = stylesheet_link_tag    "application"
     = javascript_include_tag "application"
@@ -9,18 +9,12 @@
   %body
     #header
       %h1
-        %a{:href => '/'}
-          V
-          %small> &
-          A Consultores
+        %a{:href => root_path} Sólido Norte
     #nav
       %ul
-        %li
-          %a{:href => '#'}
-            Quiénes somos
-        %li
-          %a{:href => '#'}
-            Servicios
+        - pages.each do |page|
+          %li
+            %a{:href => page_path(page)}= page.title
         %li
           %a{:href => '#'}
             Artículos
@@ -28,19 +22,4 @@
           %a{:href => '#'}
             Contáctenos
     #body
-      .row
-        = yield
-        %p.profile.big
-          Ofrecemos servicios de consultoría en temas de
-          %strong
-            gestión pública,
-          %strong
-            elaboración de proyectos,
-          así como en
-          %strong
-            proyectos de rescate arqueológico (CIRA)
-          y
-          %strong
-            proyectos de evaluación arqueológica (PEA).
-          %a{:href => '#'}
-            Conozca nuestros servicios &raquo;
+      = yield
